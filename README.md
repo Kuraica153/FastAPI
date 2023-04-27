@@ -8,16 +8,12 @@ python -m venv venv
 
 ## Ingresar al entorno virtual
 
-venv/Scripts/Activate.ps1
+venv/Scripts/Activate
 
 ## Instalar requerimientos
 
 pip install -r requirements.txt
 
-## Ejecutar server
+## Correr servidor
 
-python server.py
-
-## Ejecutar cliente
-
-python client.py
+uvicorn main:app --reload
